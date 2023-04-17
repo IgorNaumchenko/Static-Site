@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/styles/page.css" type="text/css">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="icon" href={% block icon %}{% endblock %}>
+</head>
+<header class="header">
+    <a> Танкостроение {% block nation %}{% endblock %} </a>
+    <a> {% block descnation %}{% endblock %} </a>
+</header><br>
+
+<body class="body">
+    <div class="container">
+        <div class="card">
+            <img class="photo" src={% block photolink %}{% endblock %}><br>
+            <a class="description"> {% block tankdescription%}{% endblock %} </a>
+        </div>
+
+        <div class="card">
+            <img class="photo" src={% block photolink2 %}{% endblock %}><br>
+            <a class="description"> {% block tankdescription2%}{% endblock %} </a>
+        </div>
+
+        <div class="card">
+            <img class="photo" src={% block photolink3 %}{% endblock %}><br>
+            <a class="description"> {% block tankdescription3%}{% endblock %} </a>
+        </div>
+
+        <div class="card">
+            <img class="photo" src={% block photolink4 %}{% endblock %}><br>
+            <a class="description"> {% block tankdescription4%}{% endblock %} </a>
+        </div>
+
+        <div class="card">
+            <img class="photo" src={% block photolink5 %}{% endblock %}><br>
+            <a class="description"> {% block tankdescription5%}{% endblock %} </a>
+        </div>
+    </div>
+</body>
+<script src="/pictures/scripts/main.js"></script>
+</html>
